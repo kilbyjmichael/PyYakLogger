@@ -5,6 +5,7 @@
 import API as pyak
 import sys
 from datetime import datetime
+import re
 
 def main():
     # set location/user for the API
@@ -34,18 +35,21 @@ def main():
                 new_yak = yak.return_yak()
                 yak_comments = yak.get_comments()
             if new_yak[0] != old_yak[0]:
-                yak_file.write("<yak>\n") # open xml
-                
-                for ele in new_yak:
-                    yak_file.write(ele)
-                    print(ele)
-                    
-                for comment in yak_comments:
-                    this_comment = comment.return_comment()
-                    for ele in this_comment:
+                try:
+                    yak_file.write("<yak>\n") # open xml
+                    for ele in new_yak:
                         yak_file.write(ele)
                         print(ele)
-                yak_file.write("</yak>\n\n")
-                old_yak = new_yak
-                    
+                        
+                    for comment in yak_comments:
+                        this_comment = comment.return_comment()
+                        for ele in this_comment:
+                            yak_file.write(ele)
+                            print(ele)
+                    yak_file.write("</yak>\n\n")
+                    old_yak = new_yak
+                        
+                except UnicodeEncodeError:
+                    yak_file.write("you broke unicode again")
+                    print("unicode broken\n\n\n")
 if __name__ == "__main__": main()

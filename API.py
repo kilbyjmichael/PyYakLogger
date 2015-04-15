@@ -104,7 +104,7 @@ class Comment:
             output.append("\t\t<time>%s</time>\n" % self.time)
             output.append("\t\t</comment>\n\n")
         except UnicodeEncodeError:
-            self.message = re.sub('[^\x00-\x7F]', '',self.comment)
+            self.message = re.sub('[^\x00-\x7F]', '?',self.comment)
             
             output.append("\t\t<comment>\n")
             output.append("\t\t<message>%s</message>\n" % self.comment)
