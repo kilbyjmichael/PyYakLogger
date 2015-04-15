@@ -25,36 +25,20 @@ def main():
     if internet_on:
         print("Reading Yaks... -->")
     
+    with open(str(datetime.now().date()) + "_yak-log.txt", 'w') as yak_file:
         # read yaks!
         yak_list = [] # objects
-        while True:
-            yak_list = yakker.get_yaks()
-            show(yak_list)
-
-def show(yaklist):
-    yakNum = 1
-    sys.stdout = open(str(datetime.now().date()) + "_yak-log.txt", 'w')
-    for yak in yaklist:
-        # line between yaks
-        print ("_" * 93)
-        # show yak
-        print (yakNum)
-        yak.print_yak()
-        
-        commentNum = 1
-        # comments header
-        comments = yak.get_comments()
-        print ("\n\t\tComments:", end='')
-        # number of comments
-        print (len(comments))
-        
-        # print all comments separated by dashes
-        for comment in comments:
-            print ("\t   {0:>4}".format(commentNum), end=' ')
-            print ("-" * 77)
-            comment.print_comment()
-            commentNum += 1
-        yakNum += 1
-        sys.stdout.flush()
+        while True: # sched
+            new_yak = yakker.get_yaks()[:1]
+            old_yak = yakker.get_yaks()[1:2]
+            # check for repeat
+            if old_yak == new_yak:
+                print("this works")
+            # only get first yak off list
+            for yak in new_yak:
+                xml_yak = yak.return_yak()
+                for ele in xml_yak:
+                    print(ele)
+                yak_file.flush()
 
 if __name__ == "__main__": main()
