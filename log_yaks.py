@@ -33,8 +33,8 @@ def main():
                 new_yak = yak.return_yak()
             if new_yak[1] != old_yak[1]:
                 for ele in new_yak:
-                    print(ele)
-                    # yak_file.flush()
+                    yak_file.write(ele)
+                    yak_file.flush()
                     old_yak = new_yak
 
 if __name__ == "__main__": main()
