@@ -25,7 +25,7 @@ def main():
     if internet_on:
         print("Reading Yaks... -->")
     
-    with open(str(datetime.now().date()) + "_yak-log.txt", 'w') as yak_file:
+    with open(str(datetime.now().date()) + "_yak-log.txt", 'a') as yak_file:
         old_yak = ["empty", "empty"]
         while True:
             get_yak = yakker.get_yaks()[:1]
