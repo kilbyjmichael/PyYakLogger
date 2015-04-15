@@ -28,16 +28,17 @@ def main():
     
         yak_file = codecs.open(str(datetime.now().date()) + "_yak-log.txt", 'a', 'utf-8')
         
-        old_yak = ["empty"]
+        old_yak = ["empty", "empty"]
         while True:
             get_yak = yakker.get_yaks()
             last_yak = get_yak[:-1]
             for yak in last_yak: # get last yak
                 new_yak = yak.return_yak()
                 yak_comments = yak.get_comments()
-            if new_yak[0] != old_yak[0]: #check for duplicates
+            if new_yak[1] != old_yak[1]: #check for duplicates
                 try:
                     yak_file.write("<yak>\n") # open xml
+                    
                     for ele in new_yak:
                         yak_file.write(ele)
                         print(ele)
@@ -47,6 +48,7 @@ def main():
                         for ele in this_comment:
                             yak_file.write(ele)
                             print(ele)
+                        
                     yak_file.write("</yak>\n\n")
                     old_yak = new_yak
                     yak_file.flush()

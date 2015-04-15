@@ -14,3 +14,18 @@
 
 </yak>
 
+<yak>
+	<yak>
+	<message>No bitch, there's no saving seats on test day. This shit is a savage game of first come, first serve.</message>
+	<likes>13</likes>
+	<time>2015-04-15 14:59:26</time>
+	<lat>40.52</lat>
+	<long>-88.97</long>
+	<yak>
+		<comment>
+		<message>Apparently there is saving seats bc your pissed off</message>
+		<likes>-1</likes>
+		<time>2015-04-15 15:18:22</time>
+		</comment>
+</yak>
+
