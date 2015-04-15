@@ -26,15 +26,26 @@ def main():
         print("Reading Yaks... -->")
     
     with open(str(datetime.now().date()) + "_yak-log.txt", 'a') as yak_file:
-        old_yak = ["empty", "empty"]
+        old_yak = ["empty"]
         while True:
-            get_yak = yakker.get_yaks()[:1]
-            for yak in get_yak:
+            get_yak = yakker.get_yaks()
+            last_yak = get_yak[:-1]
+            for yak in last_yak: # get last yak
                 new_yak = yak.return_yak()
-            if new_yak[1] != old_yak[1]:
+                yak_comments = yak.get_comments()
+            if new_yak[0] != old_yak[0]:
+                yak_file.write("<yak>\n") # open xml
+                
                 for ele in new_yak:
                     yak_file.write(ele)
-                    yak_file.flush()
-                    old_yak = new_yak
-
+                    print(ele)
+                    
+                for comment in yak_comments:
+                    this_comment = comment.return_comment()
+                    for ele in this_comment:
+                        yak_file.write(ele)
+                        print(ele)
+                yak_file.write("</yak>\n\n")
+                old_yak = new_yak
+                    
 if __name__ == "__main__": main()

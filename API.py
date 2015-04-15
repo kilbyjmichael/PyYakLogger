@@ -95,6 +95,24 @@ class Comment:
                 my_action = "v "
             print ("\t\t%s(%s) %s \n\n\t\tPosted  %s" % (my_action, self.likes, self.comment, self.time))
 
+    def return_comment(self):
+        output = []
+        try:
+            output.append("\t\t<comment>\n")
+            output.append("\t\t<message>%s</message>\n" % self.comment)
+            output.append("\t\t<likes>%s</likes>\n" % self.likes)
+            output.append("\t\t<time>%s</time>\n" % self.time)
+            output.append("\t\t</comment>\n\n")
+        except UnicodeEncodeError:
+            self.message = re.sub('[^\x00-\x7F]', '',self.comment)
+            
+            output.append("\t\t<comment>\n")
+            output.append("\t\t<message>%s</message>\n" % self.comment)
+            output.append("\t\t<likes>%s</likes>\n" % self.likes)
+            output.append("\t\t<time>%s</time>\n" % self.time)
+            output.append("\t\t</comment>\n\n")
+        return output
+
 class Yak:
     def __init__(self, raw, client):
         self.client = client
@@ -188,7 +206,6 @@ class Yak:
     def return_yak(self):
         output = []
         try:
-            output.append("<yak>\n")
             output.append("\t<message>%s</message>\n" % self.message)
             if self.handle is not None:
                output.append("\t<handle>%s</handle>\n" % self.handle)
@@ -196,7 +213,6 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
-            output.append("</yak>\n\n")
         except UnicodeEncodeError:
             self.message = re.sub('[^\x00-\x7F]', '',self.message)
             
@@ -208,7 +224,6 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
-            output.append("</yak>\n\n")
         return output
 
 class Yakker:
