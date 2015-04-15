@@ -26,19 +26,15 @@ def main():
         print("Reading Yaks... -->")
     
     with open(str(datetime.now().date()) + "_yak-log.txt", 'w') as yak_file:
-        # read yaks!
-        yak_list = [] # objects
-        while True: # sched
-            new_yak = yakker.get_yaks()[:1]
-            old_yak = yakker.get_yaks()[1:2]
-            # check for repeat
-            if old_yak == new_yak:
-                print("this works")
-            # only get first yak off list
-            for yak in new_yak:
-                xml_yak = yak.return_yak()
-                for ele in xml_yak:
+        old_yak = ["empty", "empty"]
+        while True:
+            get_yak = yakker.get_yaks()[:1]
+            for yak in get_yak:
+                new_yak = yak.return_yak()
+            if new_yak[1] != old_yak[1]:
+                for ele in new_yak:
                     print(ele)
-                yak_file.flush()
+                    # yak_file.flush()
+                    old_yak = new_yak
 
 if __name__ == "__main__": main()

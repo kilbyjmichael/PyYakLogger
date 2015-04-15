@@ -189,9 +189,9 @@ class Yak:
         output = []
         try:
             output.append("<yak>")
+            output.append("<message>%s</message>" % self.message)
             if self.handle is not None:
                output.append("<handle>%s</handle>" % self.handle)
-            output.append("<message>%s</message>" % self.message)
             output.append("<likes>%s</likes>" % self.likes)
             output.append("<time>%s</time>" % self.time)
             output.append("<lat>%s</lat>" % self.latitude)
@@ -201,9 +201,9 @@ class Yak:
             self.message = re.sub('[^\x00-\x7F]', '',self.message)
             
             output.append("<yak>")
+            output.append("<message>%s</message>" % self.message)
             if self.handle is not None:
                output.append("<handle>%s</handle>" % self.handle)
-            output.append("<message>%s</message>" % self.message)
             output.append("<likes>%s</likes>" % self.likes)
             output.append("<time>%s</time>" % self.time)
             output.append("<lat>%s</lat>" % self.latitude)
