@@ -26,7 +26,7 @@ def main():
     if internet_on:
         print("Reading Yaks... -->")
     
-        yak_file = codecs.open(str(datetime.now().date()) + "_yak-log.txt", 'a', 'utf-8')
+        yak_file = codecs.open(str(datetime.now().date()) + "_yak-log.xml", 'a', 'utf-8')
         
         old_yak = ["empty", "empty"]
         while True:
