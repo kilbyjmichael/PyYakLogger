@@ -102,7 +102,7 @@ class Comment:
             output.append("\t\t<message>%s</message>\n" % self.comment)
             output.append("\t\t<likes>%s</likes>\n" % self.likes)
             output.append("\t\t<time>%s</time>\n" % self.time)
-            output.append("\t\t</comment>\n\n")
+            output.append("\t\t</comment>\n")
         except UnicodeEncodeError:
             self.message = re.sub('[^\x00-\x7F]', '?',self.comment)
             
@@ -110,7 +110,7 @@ class Comment:
             output.append("\t\t<message>%s</message>\n" % self.comment)
             output.append("\t\t<likes>%s</likes>\n" % self.likes)
             output.append("\t\t<time>%s</time>\n" % self.time)
-            output.append("\t\t</comment>\n\n")
+            output.append("\t\t</comment>\n")
         return output
 
 class Yak:
@@ -206,6 +206,7 @@ class Yak:
     def return_yak(self):
         output = []
         try:
+            output.append("\t<yak>\n")
             output.append("\t<message>%s</message>\n" % self.message)
             if self.handle is not None:
                output.append("\t<handle>%s</handle>\n" % self.handle)
@@ -213,10 +214,11 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
+            output.append("\t<yak>\n")
         except UnicodeEncodeError:
-            self.message = re.sub('[^\x00-\x7F]', '',self.message)
-            
-            output.append("<yak>\n")
+            self.message = re.sub('[^\x00-\x7F]', '?', self.message)
+            print("UNICODEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!")
+            output.append("\t<yak>\n")
             output.append("\t<message>%s</message>\n" % self.message)
             if self.handle is not None:
                output.append("\t<handle>%s</handle>\n" % self.handle)
@@ -224,6 +226,7 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
+            output.append("\t<yak>\n")
         return output
 
 class Yakker:

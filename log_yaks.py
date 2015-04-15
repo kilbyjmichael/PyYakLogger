@@ -5,7 +5,7 @@
 import API as pyak
 import sys
 from datetime import datetime
-import re
+import codecs
 
 def main():
     # set location/user for the API
@@ -26,7 +26,8 @@ def main():
     if internet_on:
         print("Reading Yaks... -->")
     
-    with open(str(datetime.now().date()) + "_yak-log.txt", 'a') as yak_file:
+        yak_file = codecs.open(str(datetime.now().date()) + "_yak-log.txt", 'a', 'utf-8')
+        
         old_yak = ["empty"]
         while True:
             get_yak = yakker.get_yaks()
@@ -34,7 +35,7 @@ def main():
             for yak in last_yak: # get last yak
                 new_yak = yak.return_yak()
                 yak_comments = yak.get_comments()
-            if new_yak[0] != old_yak[0]:
+            if new_yak[0] != old_yak[0]: #check for duplicates
                 try:
                     yak_file.write("<yak>\n") # open xml
                     for ele in new_yak:
@@ -48,8 +49,25 @@ def main():
                             print(ele)
                     yak_file.write("</yak>\n\n")
                     old_yak = new_yak
+                    yak_file.flush()
                         
                 except UnicodeEncodeError:
-                    yak_file.write("you broke unicode again")
-                    print("unicode broken\n\n\n")
+                    print("We had an error, and it is being handled.")
+                    yak_file.write("<yak>\n") # open xml
+                    for ele in new_yak:
+                        new_ele = ele.encode(encoding="ascii", errors="replace")
+                        new_ele = new_ele.decode(encoding="ascii", errors="replace")
+                        yak_file.write(new_ele)
+                        print(ele)
+                        
+                    for comment in yak_comments:
+                        this_comment = comment.return_comment()
+                        for ele in this_comment:
+                            new_ele = ele.encode(encoding="ascii", errors="replace")
+                            new_ele = new_ele.decode(encoding="ascii", errors="replace")
+                            yak_file.write(new_ele)
+                            print(ele)
+                    yak_file.write("</yak>\n\n")
+                    old_yak = new_yak
+                    
 if __name__ == "__main__": main()

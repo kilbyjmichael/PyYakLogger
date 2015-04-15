@@ -1,113 +1,185 @@
 <yak>
-	<message>Someday I'll meet a guy who thinks I'm as funny as I do</message>
-	<likes>12</likes>
-	<time>2015-04-15 00:30:28</time>
-	<lat>40.51</lat>
-	<long>-88.99</long>
+<yak>
+<yak>
+	<message>Exercise....?You mean extra fries?? </message>
+	<likes>20</likes>
+	<time>2015-04-15 00:40:13</time>
+	<lat>40.48</lat>
+	<long>-89.01</long>
 		<comment>
-		<message>Girls aren't funny </message>
-		<likes>-3</likes>
-		<time>2015-04-15 00:31:20</time>
-		</comment>
-
-		<comment>
-		<message>I'm hilarious pink compass </message>
-		<likes>1</likes>
-		<time>2015-04-15 00:33:23</time>
-		</comment>
-
-		<comment>
-		<message>Tell a joke? </message>
-		<likes>0</likes>
-		<time>2015-04-15 00:35:29</time>
-		</comment>
-
-		<comment>
-		<message>"A sausage maker buys a box of cereal." </message>
-		<likes>0</likes>
-		<time>2015-04-15 00:35:42</time>
+		<message>No I mean exercise. Can't have fat bitches</message>
+		<likes>-1</likes>
+		<time>2015-04-15 00:49:23</time>
 		</comment>
 
 </yak>
 
 <yak>
-	<message>I don't have any bikini pictures on my tinder, nor do I have any "revealing" ones. My bio is not "suggestive" of hooking up, in fact the complete opposite. So why do guys only want me to hookup still?</message>
-	<likes>2</likes>
-	<time>2015-04-15 00:32:39</time>
-	<lat>40.52</lat>
+	<message>Nipple piercings on a girl with A-cups look like a piece of paper with a staple in it </message>
+	<likes>19</likes>
+	<time>2015-04-15 00:40:41</time>
+	<lat>40.5</lat>
 	<long>-89</long>
 		<comment>
-		<message>BECAUSE THATS WHAT TINDER IS FOR</message>
-		<likes>19</likes>
-		<time>2015-04-15 00:33:35</time>
-		</comment>
-
-		<comment>
-		<message>Because vagina.</message>
-		<likes>4</likes>
-		<time>2015-04-15 00:33:51</time>
-		</comment>
-
-		<comment>
-		<message>Because it's fucking tinder?</message>
-		<likes>7</likes>
-		<time>2015-04-15 00:33:52</time>
-		</comment>
-
-		<comment>
-		<message>I MEAN THE WHOLE OBJECT IS TO LIKE PPL U THINK ARE HOT AND DISLIKE THE ONES U DONT. </message>
-		<likes>6</likes>
-		<time>2015-04-15 00:34:40</time>
-		</comment>
-
-		<comment>
-		<message>Because Tinder</message>
-		<likes>1</likes>
-		<time>2015-04-15 00:34:43</time>
-		</comment>
-
-		<comment>
-		<message>I know tht. But some people have sworn they are in a relationship bc of tinder. Why can't that happen? Even in real life, guys jump to the "fuck" question. Like why?  </message>
-		<likes>1</likes>
-		<time>2015-04-15 00:35:05</time>
-		</comment>
-
-		<comment>
-		<message>Tinder was made for "fucking" not "relationships"</message>
-		<likes>0</likes>
-		<time>2015-04-15 00:35:44</time>
-		</comment>
-
-		<comment>
-		<message>God you're stupid . No wonder everyone just wants to hook up</message>
-		<likes>0</likes>
-		<time>2015-04-15 00:44:05</time>
-		</comment>
-
-		<comment>
-		<message>How am I stupid? Yea I know tinder is for hooking up but I know people are in long serious relationships from someone they met on there. I'm just curious to know how. </message>
-		<likes>1</likes>
-		<time>2015-04-15 00:47:19</time>
-		</comment>
-
-		<comment>
-		<message>That's why I deleted my tinder because everyone's a hot dog on there. My sister found her perfect man on there, but that's like 1/200 chance. </message>
-		<likes>1</likes>
-		<time>2015-04-15 00:48:13</time>
-		</comment>
-
-		<comment>
-		<message>^Thank you for offering an insightful and logical answer to me without attacking me.</message>
+		<message>Hater</message>
 		<likes>-1</likes>
-		<time>2015-04-15 00:50:04</time>
+		<time>2015-04-15 00:41:37</time>
 		</comment>
 
 		<comment>
-		<message>Prbly had the intention of hooking up n just connected. Me and my boyfriend were hooking up because I was going away to school and realized we didn't wanna see eachother with anyone else</message>
+		<message>I actually laughed at this for a good 5 minutes. thankful for my DDs </message>
+		<likes>2</likes>
+		<time>2015-04-15 00:44:47</time>
+		</comment>
+
+		<comment>
+		<message>You're DDs don't count since ur a dude</message>
+		<likes>1</likes>
+		<time>2015-04-15 00:46:23</time>
+		</comment>
+
+		<comment>
+		<message>Boom</message>
 		<likes>0</likes>
-		<time>2015-04-15 00:52:42</time>
+		<time>2015-04-15 00:48:58</time>
+		</comment>
+
+		<comment>
+		<message>Find a sugar daddy </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:49:51</time>
+		</comment>
+
+		<comment>
+		<message>Ew</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:51:13</time>
+		</comment>
+
+		<comment>
+		<message>Just like girls make fun of small dicks?</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:55:03</time>
+		</comment>
+
+		<comment>
+		<message>Weird I'm sure guys ask for those haha</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:55:14</time>
+		</comment>
+
+		<comment>
+		<message>Gotta risk it for the biscuit. Get groovy for the boobies. </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:55:18</time>
+		</comment>
+
+		<comment>
+		<message>I've never made fun of a guy for having a small dick. Yes I've felt bad but it's not like he can help it </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:55:57</time>
+		</comment>
+
+		<comment>
+		<message>Shovel. I have a small dick. Do you feel bad for me?</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:57:11</time>
+		</comment>
+
+		<comment>
+		<message>I don't discriminate girls with small tits and piercings haha</message>
+		<likes>-1</likes>
+		<time>2015-04-15 00:57:39</time>
+		</comment>
+
+		<comment>
+		<message>Mushroom yes I do feel bad for you, I'm deeply sorry</message>
+		<likes>1</likes>
+		<time>2015-04-15 01:03:31</time>
+		</comment>
+
+		<comment>
+		<message>She wants to help po</message>
+		<likes>0</likes>
+		<time>2015-04-15 01:05:12</time>
 		</comment>
 
 </yak>
 
+<yak>
+	<message>Can someone who has been a TA please answer some questions for me... </message>
+	<handle>Pretty please </handle>
+	<likes>-2</likes>
+	<time>2015-04-15 00:41:40</time>
+	<lat>40.52</lat>
+	<long>-89.01</long>
+		<comment>
+		<message>No, stfu</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:42:00</time>
+		</comment>
+
+		<comment>
+		<message>What do you need to ask?</message>
+		<likes>2</likes>
+		<time>2015-04-15 00:43:04</time>
+		</comment>
+
+		<comment>
+		<message>Wtf is your problem </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:43:08</time>
+		</comment>
+
+		<comment>
+		<message>I want to know if there is a requiment for GPA </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:43:25</time>
+		</comment>
+
+		<comment>
+		<message>^yes</message>
+		<likes>0</likes>
+		<time>2015-04-15 00:44:00</time>
+		</comment>
+
+		<comment>
+		<message>What is it </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:44:11</time>
+		</comment>
+
+		<comment>
+		<message>Because I was asked and now I'm worried because I said I would do it and she didn't ask me my gpa. If the teacher doesn't care will it matter </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:44:41</time>
+		</comment>
+
+		<comment>
+		<message>Your his doesn't matter, only the grade that you received in the class matters. </message>
+		<likes>1</likes>
+		<time>2015-04-15 00:52:22</time>
+		</comment>
+
+		<comment>
+		<message>GPA* </message>
+		<likes>1</likes>
+		<time>2015-04-15 00:52:29</time>
+		</comment>
+
+		<comment>
+		<message>Thank you so much! </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:53:52</time>
+		</comment>
+
+		<comment>
+		<message>No problem! </message>
+		<likes>0</likes>
+		<time>2015-04-15 00:57:39</time>
+		</comment>
+
+</yak>
+
+<yak>
 <yak>
