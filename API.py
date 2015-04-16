@@ -214,7 +214,7 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
-            output.append("\t<yak>\n")
+            output.append("\t</yak>\n")
         except UnicodeEncodeError:
             self.message = re.sub('[^\x00-\x7F]', '?', self.message)
             print("UNICODEEEEEEEEEEEEEEEEEEEE!!!!!!!!!!!!")
@@ -226,7 +226,7 @@ class Yak:
             output.append("\t<time>%s</time>\n" % self.time)
             output.append("\t<lat>%s</lat>\n" % self.latitude)
             output.append("\t<long>%s</long>\n" % self.longitude)
-            output.append("\t<yak>\n")
+            output.append("\t</yak>\n")
         return output
 
 class Yakker:
